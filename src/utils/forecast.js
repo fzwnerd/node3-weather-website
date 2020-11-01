@@ -18,7 +18,7 @@ const forecast = (loc, callback) => {
 
             //console.log({current});
 
-            callback(null, `${current.weather_descriptions[0]}. It is now ${current.temperature} degrees out. It feels like ${current.feelslike} degrees`)
+            callback(null, `${current.weather_descriptions[0]}. It is now ${current.temperature} degrees out. It feels like ${current.feelslike} degrees. Humidity is ${current.humidity}`)
         }
     );
 }
