@@ -9,7 +9,7 @@ const search = (loc) => {
     message1.textContent = 'fetching weather...';
     message2.textContent = '';
 
-    fetch('http://localhost:3000/weather?address=' + loc)
+    fetch('/weather?address=' + loc)
     .then(response => response.json())
     .then(data => {
         if (data.error) {
